@@ -1,50 +1,17 @@
-# Prova de Paradigmas
+Prova de Paradigmas — Professor Rodineli.
 
-Professor: Rodineli
+Alunos: João Victor Lima Azevedo, matrícula 2022021127, e Nargylla Cloviel Lima, matrícula 2023035691.
 
-Alunos:
+Sorveteria Elefantinho.
 
-- João Victor Lima Azevedo - 2022021127
-- Nargylla Cloviel Lima - 2023035691
+No main.py, o paradigma imperativo aparece nas linhas 6–7 e 27–28, com a repetição usando for; nas linhas 40–42, com instruções em sequência; nas linhas 45–50, com o menu repetido pelo while; nas linhas 53, 56, 81, 84 e 89, com as decisões usando if, elif e else; nas linhas 74–78, com a alteração da lista pelo append; e na linha 87, com o break encerrando a repetição.
 
-## Sorveteria Elefantinho
+O paradigma funcional aparece na linha 4, onde sorted recebe uma função lambda e cria uma lista ordenada por preço sem alterar o cardápio original. Nas linhas 10–12 e 15–18, as funções de cálculo são puras: retornam resultados sem alterar os dados recebidos. Na linha 18, map é uma função de ordem superior, pois recebe calcular_subtotal como argumento, e sum soma os resultados.
 
-Programa para escolher sorvetes, adicionar ao pedido e ver o total. O cardápio mostra os sabores do menor para o maior preço.
+O programa tem cinco funções e usa str nos sabores, int nos códigos e quantidades e float nos preços, além de lista e dicionário.
 
-Para rodar:
+A pergunta que fiz ao ChatGPT foi: “Consigo aplicar algum tipo de paradigma na criação de um cardápio (lista de itens)?”
 
-```bash
-python main.py
-```
+Resposta do ChatGPT, resumida: “Sim. O imperativo pode usar for, if e alteração de estado para listar ou cadastrar produtos. O funcional pode usar funções puras, filter, map ou sorted para consultar e transformar o cardápio sem alterar os dados originais.”
 
-## Paradigmas no main.py
-
-| Linhas | Paradigma | Uso |
-| --- | --- | --- |
-| 4 | Funcional | `sorted` recebe uma função `lambda` e cria uma lista ordenada por preço, sem alterar o cardápio. |
-| 6–7 e 27–28 | Imperativo | Repetição com `for`. |
-| 40–42 | Imperativo | Instruções em sequência. |
-| 45–50 | Imperativo | Repetição do menu com `while`. |
-| 53, 56, 81, 84 e 89 | Imperativo | Decisões com `if`, `elif` e `else`. |
-| 74–78 | Imperativo | Alteração da lista com `append`. |
-| 87 | Imperativo | Encerramento da repetição com `break`. |
-| 10–12 | Funcional | Função pura para calcular o subtotal. |
-| 15–18 | Funcional | Cálculo do total sem alterar o pedido. |
-| 18 | Funcional | Função de ordem superior: `map` recebe outra função. |
-
-O programa tem 5 funções. Os tipos usados incluem `str` nos sabores, `int` nas quantidades e `float` nos preços.
-
-## Pergunta que fiz ao ChatGPT
-
-> **Consigo aplicar algum tipo de paradigma na criação de um cardápio (lista de itens)?**
-
-### Resposta do ChatGPT (resumida)
-
-Sim. Um cardápio de sorveteria pode mostrar os dois paradigmas:
-
-- **Imperativo:** usar `for`, `if`, variáveis e alteração de estado para cadastrar, listar ou procurar produtos.
-- **Funcional:** usar funções puras, `filter()`, `map()` ou `sorted()` para consultar e transformar o cardápio sem alterar os dados originais.
-
-### O que aplicamos depois da resposta
-
-Acrescentamos `sorted` com `lambda` na linha 4 para mostrar os sabores do menor para o maior preço. Ele cria uma nova lista sem alterar o dicionário original. Depois, o `for` das linhas 6–7 mostra os itens. Assim, o cardápio usa uma ideia funcional na ordenação e uma imperativa na exibição.
+Depois dessa resposta, acrescentamos sorted com lambda na linha 4 para ordenar os sabores por preço. A ordenação cria uma nova lista e o for das linhas 6–7 mostra os itens. Assim, aplicamos os dois paradigmas no cardápio.
